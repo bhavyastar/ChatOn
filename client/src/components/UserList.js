@@ -72,7 +72,8 @@ const UserList = ({ setSelectedUsers }) => {
         }
 
         if(client) getUsers()
-    }, [client, loading]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     if(error) {
         return (
